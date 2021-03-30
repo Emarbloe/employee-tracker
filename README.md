@@ -107,8 +107,8 @@ Run the following command at the root of your project and answer the prompted qu
 
 No testing is currently set up
 
-## Contributing
-:octocat: [Joseph DeWoody](https://github.com/jpd61)
+## Contributor
+:octocat: [Ephraim Marbloe](https://github.com/jpd61)
 
 ## Questions
-✉️ Contact me with any questions: [email](mailto:jpd@dewoodyoil.com) , [GitHub](https://github.com/jpd61)<br />
+✉️ Contact information: [email](mailto:fephraim@gmail.com.com) , [GitHub](https://github.com/jpd61)<br />
