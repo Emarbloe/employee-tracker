@@ -1,16 +1,6 @@
 
-<h1 align="center">Employee Tracker Using MySQL, Inquirer, Console.Table and Node.js 👋</h1>
+<h1 align="center">Employee Tracker Using MySQL, Inquirer, and Node.js </h1>
   
-<p align="center">
-    <img src="https://img.shields.io/github/repo-size/jpd61/employee-tracker" />
-    <img src="https://img.shields.io/github/languages/top/jpd61/employee-tracker"  />
-    <img src="https://img.shields.io/github/issues/jpd61/employee-tracker" />
-    <img src="https://img.shields.io/github/last-commit/jpd61/employee-tracker" >
-    <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/jpd61?style=social" target="_blank" /></a>
-    <a href="https://twitter.com/jpdewoody">
-        <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/jpdewoody.svg?style=social" target="_blank" />
-    </a>
-</p>
   
 <p align="center">
     <img src="https://img.shields.io/badge/Javascript-yellow" />
@@ -108,7 +98,7 @@ Run the following command at the root of your project and answer the prompted qu
 No testing is currently set up
 
 ## Contributor
-:octocat: [Ephraim Marbloe](https://github.com/jpd61)
+ [Ephraim Marbloe](https://github.com/jpd61)
 
 ## Questions
 ✉️ Contact information: [email](mailto:fephraim@gmail.com.com) , [GitHub](https://github.com/jpd61)<br />
