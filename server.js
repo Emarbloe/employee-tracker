@@ -12,9 +12,9 @@ connection.connect((error) => {
   console.log(``);
   console.log(chalk.greenBright.bold(figlet.textSync('Employee Tracker')));
   console.log(``);
-  console.log(`                                                          ` + chalk.greenBright.bold('Created By: Joseph DeWoody'));
+  console.log(`                                                          ` + chalk.greenBright.bold('Created By: Ephraim Marbloe'));
   console.log(``);
-  console.log(chalk.yellow.bold(`====================================================================================`));
+  console.log(chalk.blue.bold(`====================================================================================`));
   promptUser();
 });
 
@@ -104,7 +104,7 @@ const promptUser = () => {
   });
 };
 
-// ----------------------------------------------------- VIEW -----------------------------------------------------------------------
+// 
 
 // View All Employees
 const viewAllEmployees = () => {
@@ -120,27 +120,27 @@ const viewAllEmployees = () => {
                   ORDER BY employee.id ASC`;
   connection.promise().query(sql, (error, response) => {
     if (error) throw error;
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     console.log(`                              ` + chalk.green.bold(`Current Employees:`));
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     console.table(response);
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     promptUser();
   });
 };
 
 // View all Roles
 const viewAllRoles = () => {
-  console.log(chalk.yellow.bold(`====================================================================================`));
+  console.log(chalk.blue.bold(`====================================================================================`));
   console.log(`                              ` + chalk.green.bold(`Current Employee Roles:`));
-  console.log(chalk.yellow.bold(`====================================================================================`));
+  console.log(chalk.blue.bold(`====================================================================================`));
   const sql =     `SELECT role.id, role.title, department.department_name AS department
                   FROM role
                   INNER JOIN department ON role.department_id = department.id`;
   connection.promise().query(sql, (error, response) => {
     if (error) throw error;
       response.forEach((role) => {console.log(role.title);});
-      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(chalk.blue.bold(`====================================================================================`));
       promptUser();
   });
 };
@@ -150,11 +150,11 @@ const viewAllDepartments = () => {
   const sql =   `SELECT department.id AS id, department.department_name AS department FROM department`; 
   connection.promise().query(sql, (error, response) => {
     if (error) throw error;
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     console.log(`                              ` + chalk.green.bold(`All Departments:`));
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     console.table(response);
-    console.log(chalk.yellow.bold(`====================================================================================`));
+    console.log(chalk.blue.bold(`====================================================================================`));
     promptUser();
   });
 };
@@ -169,20 +169,20 @@ const viewEmployeesByDepartment = () => {
                   LEFT JOIN department ON role.department_id = department.id`;
   connection.query(sql, (error, response) => {
     if (error) throw error;
-      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(chalk.blue.bold(`====================================================================================`));
       console.log(`                              ` + chalk.green.bold(`Employees by Department:`));
-      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(chalk.blue.bold(`====================================================================================`));
       console.table(response);
-      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(chalk.blue.bold(`====================================================================================`));
       promptUser();
     });
 };
 
 //View all Departments by Budget
 const viewDepartmentBudget = () => {
-  console.log(chalk.yellow.bold(`====================================================================================`));
+  console.log(chalk.blue.bold(`====================================================================================`));
   console.log(`                              ` + chalk.green.bold(`Budget By Department:`));
-  console.log(chalk.yellow.bold(`====================================================================================`));
+  console.log(chalk.blue.bold(`====================================================================================`));
   const sql =     `SELECT department_id AS id, 
                   department.department_name AS department,
                   SUM(salary) AS budget
@@ -191,7 +191,7 @@ const viewDepartmentBudget = () => {
   connection.query(sql, (error, response) => {
     if (error) throw error;
       console.table(response);
-      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(chalk.blue.bold(`====================================================================================`));
       promptUser();
   });
 };
@@ -328,9 +328,9 @@ const addRole = () => {
 
             connection.promise().query(sql, crit, (error) => {
               if (error) throw error;
-              console.log(chalk.yellow.bold(`====================================================================================`));
+              console.log(chalk.blue.bold(`====================================================================================`));
               console.log(chalk.greenBright(`Role successfully created!`));
-              console.log(chalk.yellow.bold(`====================================================================================`));
+              console.log(chalk.blue.bold(`====================================================================================`));
               viewAllRoles();
             });
           });
