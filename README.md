@@ -13,17 +13,15 @@
     <img src="https://img.shields.io/badge/inquirer-green" />
 </p>
    
-## Description
+## Task
 
-🔍 A node.js application that uses user input from inquirer to populate an employee tracker database displaying members of a company.
+Developers frequently have to create interfaces that make it easy for non-developers to view and interact with information stored in databases. These interfaces are called content management systems (CMS). Your challenge this week is to build a command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
-![DeWoody Employee Tracker](./assets/title.PNG)
+![Employee Tracker](./assets/title.PNG)
   
-💻 Below is the gif showing the functionality of the application:
+ Below is the gif showing the functionality of the application:
   
-![DeWoody Employee Tracker](./assets/employee-tracker.gif)
-  
-🎥 The full movie file showing functionality of the application can be found [here](./assets/employee-tracker.webm)  
+![Employee Tracker](./assets/employee-tracker.gif)
   
 ## User Story
   
@@ -55,50 +53,23 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 ```
   
-## Table of Contents
-- [Description](#description)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [Table of Contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Questions](#questions)
 
 ## Installation
-💾   
   
 `npm init`
   
 `npm install inquirer`
 
 `npm install mysql2`
-
-`npm install console-table`
-
-`npm install figlet`
-
-`npm install chalk`
-
-`npm install nodemon`
-
-`npm install validator`
   
 ## Usage
-💻   
   
 Run the following command at the root of your project and answer the prompted questions:
   
 `npm start`
 
-## Testing
-✏️
-
-No testing is currently set up
-
 ## Contributor
- [Ephraim Marbloe](https://github.com/jpd61)
+ [Ephraim Marbloe](https://github.com/Emarbloe/employee-tracker.git)
 
 ## Questions
 ✉️ Contact information: [email](mailto:fephraim@gmail.com.com) , [GitHub](https://github.com/jpd61)<br />
